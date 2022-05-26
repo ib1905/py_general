@@ -28,3 +28,13 @@ array8=np.ones((2,3),dtype=int)
 array9=rg.random((2,3))
 array8*=3
 array9+=array8
+#%%
+#unary operations often implemented as methods of ndarray class
+#rg=np.random.default_rng(1) #instance of default random number generator
+array10=rg.random((2,3))
+print(array10)
+print('sum:',array10.sum(),'\nmin:',array10.min(),'\nmax:',array10.max())
+#%%
+array11=np.arange(12).reshape(3,4)
+print('sum of each column:',array11.sum(axis=0))
+print('sum of each row:',array11.sum(axis=1))
